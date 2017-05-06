@@ -8,7 +8,7 @@ chromedriver = "/Users/sai teja/Downloads/chromedriver"
 os.environ["webdriver.chrome.driver"] = chromedriver
 browser = webdriver.Chrome(chromedriver)
 browser.get("http://www.the-numbers.com/movie/budgets/all")
-Row_count = browser.find_elements_by_xpath("//table/tbody/tr");
+Row_count = browser.find_elements_by_xpath("//table/tbody/tr")
 for x in range(0,len(Row_count)):
 	if x%2==1:
 		print(x)
