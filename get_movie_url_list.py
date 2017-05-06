@@ -23,7 +23,7 @@ os.environ["webdriver.chrome.driver"] = chromedriver
 browser = webdriver.Chrome(chromedriver)
 #browser.get("http://www.the-numbers.com/movie/budgets/all")
 
-for url in range(2000,3000):
+for url in range(3000,4000):
 	try:
 		print(url)
 		browser.get(urls[url])
@@ -36,6 +36,6 @@ for url in range(2000,3000):
 	
 browser.quit()
 
-with open('movie_url_info3.csv','wb') as csvfile:
+with open('movie_url_info4.csv','wb') as csvfile:
 	writer = csv.writer(csvfile)
 	writer.writerows(urldata)
