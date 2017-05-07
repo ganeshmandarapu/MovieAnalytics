@@ -23,7 +23,7 @@ os.environ["webdriver.chrome.driver"] = chromedriver
 browser = webdriver.Chrome(chromedriver)
 #browser.get("http://www.the-numbers.com/movie/budgets/all")
 
-for url in range(3000,4000):
+for url in range(4000,len(urls)):
 	try:
 		print(url)
 		browser.get(urls[url])
