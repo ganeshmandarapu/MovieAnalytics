@@ -23,8 +23,8 @@ class ImdbMovieUrlsProvider():
         with open("movie_url_info.csv", "r") as f:
             spamreader = csv.reader(f,delimiter=',')
             for row in spamreader:
-                data.append(row)
-        return [data[0][1]]
+                data.append(row[1])
+        return data
 
 
 class ImdbSpider(scrapy.Spider):
